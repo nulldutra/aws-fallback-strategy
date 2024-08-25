@@ -102,3 +102,24 @@ module "cloudfront" {
   ...
 }
 ```
+
+<hr>
+
+## Testing
+
+I create a API Mock with two endpoints. The origin prod return `{ "environment": "production" }` and the fallback return 
+`{ "environment": "fallback" }`.
+
+CloudFront IP's
+
+![](./docs/dns.png)
+
+Request to production origin
+
+![](./docs/production.png)
+
+Change traffic to fallback
+
+![](./docs/fallback.png)
+
+Note that the DNS entry hasn't changed.
