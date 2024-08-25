@@ -107,7 +107,7 @@ module "cloudfront" {
 
 ## Testing
 
-I create a API Mock with two endpoints. The origin prod return `{ "environment": "production" }` and the fallback return 
+I created a Mock API with two endpoints. The origin prod return `{ "environment": "production" }` and the fallback return 
 `{ "environment": "fallback" }`.
 
 CloudFront IP's
